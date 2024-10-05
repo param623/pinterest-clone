@@ -1,0 +1,24 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.search-field {
+  width: 300px;
+}
+
+mat-toolbar {
+  background-color: #e60023 !important; /* Customize toolbar color */
+}
+
+.search-input {
+  width: 300px; /* Adjust the width as necessary */
+  border-radius: 50px; /* Makes the border circular */
+  border: 2px solid #007bff; /* Example border color */
+  transition: border-color 0.3s; /* Smooth transition for border color on focus */
+
+  &:focus {
+    border-color: #0056b3; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional shadow effect */
+    outline: none; /* Remove default outline */
+  }
+}

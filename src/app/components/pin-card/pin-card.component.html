@@ -1,0 +1,7 @@
+<div class="card">
+    <img [src]="pin.imageUrl" class="card-img-top img-fluid" alt="Pin Image">
+    <div class="card-body">
+        <p class="card-text">{{ pin.description }}</p>
+        <button class="btn btn-danger" (click)="savePin(pin)">Save</button>
+    </div>
+</div>

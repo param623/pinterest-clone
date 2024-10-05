@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  // padding-top: 56px;
+}
+
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  .card-body {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 16px 16px 0 0;
+  }
+
+  .btn-danger {
+    background-color: #e60023;
+    border: none;
+
+    &:hover {
+      background-color: #c6001d;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .d-flex {
+    flex-direction: column; /* Stack buttons on smaller screens */
+    align-items: center; /* Center align buttons */
+  }
+
+  .navbar .d-flex button {
+    margin-top: 5px; /* Add spacing between buttons */
+  }
+}
