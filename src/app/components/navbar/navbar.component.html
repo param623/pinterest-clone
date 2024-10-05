@@ -1,23 +1,42 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Pinterest Clone</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <!-- Pinterest logo -->
+        <a class="navbar-brand" href="#">
+            <img src="/assets/pinterest.png" alt="Pinterest Logo" width="100" class="d-inline-block align-text-top">
+        </a>
+
+        <!-- Navbar toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Collapse content -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <!-- Left-aligned options -->
+            <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="#">Today</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Watch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Explore</a>
                 </li>
             </ul>
-            <form class="d-flex mx-auto" (submit)="onSearch(searchTerm)">
-                <input [(ngModel)]="searchTerm" [ngModelOptions]="{standalone: true}" 
-                    class="form-control search-input me-2" type="search" placeholder="Search" />
-                <button class="btn btn-outline-primary" type="button" (click)="onSearch(searchTerm)">Search</button>
-            </form>
+
+            <!-- Centered Search Bar (with search icon inside) -->
+            <div class="search-container">
+                <input [(ngModel)]="searchTerm" [ngModelOptions]="{standalone: true}" class="form-control search-input"
+                    type="search" placeholder="Search" aria-label="Search" />
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+
+            <!-- Right-aligned options (Login, Signup) -->
             <div class="d-flex align-items-center">
-                <button class="btn btn-outline-primary" type="button">Profile</button>
-                <button class="btn btn-primary ms-2" type="button">Create Pin</button>
+                <button class="btn btn-login me-2" type="button">Login</button>
+                <button class="btn btn-signup" type="button">Sign Up</button>
             </div>
         </div>
     </div>
