@@ -1,24 +1,74 @@
-.spacer {
-  flex: 1 1 auto;
+/* Styling for the login and signup buttons */
+
+/* Pinterest red for the active button (Signup) */
+.btn-signup {
+  background-color: #e60023; /* Pinterest red */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  padding: 5px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.search-field {
-  width: 300px;
+.btn-signup:hover {
+  background-color: #b8001c; /* Darker red on hover */
+  color: white;
 }
 
-mat-toolbar {
-  background-color: #e60023 !important; /* Customize toolbar color */
+/* Grey for the inactive button (Login) */
+.btn-login {
+  background-color: #f5f5f5; /* Light grey background */
+  color: #5e5e5e; /* Dark grey text */
+  border: 1px solid #d1d1d1; /* Light border */
+  border-radius: 25px;
+  padding: 5px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #e60023; /* Hover makes it Pinterest red */
+  color: white;
+}
+
+/* Center the search bar and icon */
+.search-container {
+  position: relative;
+  width: 50%; /* Adjust as needed */
 }
 
 .search-input {
-  width: 300px; /* Adjust the width as necessary */
-  border-radius: 50px; /* Makes the border circular */
-  border: 2px solid #007bff; /* Example border color */
-  transition: border-color 0.3s; /* Smooth transition for border color on focus */
+  width: 100%;
+  padding-left: 40px; /* Space for the search icon */
+  border-radius: 50px; /* Circular borders */
+  border: none; /* No border */
+  background-color: #f1f1f1; /* Light grey background */
+  height: 40px; /* Adjust the height of the input */
+}
 
-  &:focus {
-    border-color: #0056b3; /* Change border color on focus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional shadow effect */
-    outline: none; /* Remove default outline */
+.search-input:focus {
+  outline: none;
+  box-shadow: none; /* Remove default focus shadow */
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #888; /* Light color for the icon */
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .search-container {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .btn-login,
+  .btn-signup {
+    padding: 10px 15px;
+    width: 100%; /* Full width on mobile */
   }
 }
