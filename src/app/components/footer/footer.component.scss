@@ -1,0 +1,55 @@
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f8f9fa; /* Matches light theme of navbar */
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+footer a:hover {
+  color: #e60023; /* Pinterest Red */
+}
+
+.btn-floating i {
+  font-size: 18px;
+}
+
+.footer .container-fluid {
+  max-width: 100%; /* Ensures full width */
+}
+
+.bg-dark {
+  background-color: #111 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.footer-section {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+/* Additional styling for hover effects */
+.footer-section a {
+  color: #555; /* Slightly darker links */
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #e60023; /* Pinterest Red for hover effect */
+  text-decoration: underline;
+}
+
+/* Make sure to adjust paddings if necessary */
+.footer-section .p-4 {
+  padding: 40px 20px; /* Ensure enough space around footer content */
+}
