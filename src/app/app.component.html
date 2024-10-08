@@ -1,6 +1,5 @@
 <app-navbar (search)="onSearch($event)"></app-navbar>
 <div class="container mb-5">
-  <app-landing-page></app-landing-page>
-  <!-- <app-pin-list [searchTerm]="searchTerm"></app-pin-list> -->
+  <router-outlet></router-outlet>
 </div>
 <app-footer></app-footer>

@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class PinListComponent {
 
-  @Input() searchTerm: string = '';
+  // @Input() searchTerm: string = '';
 
   pins = [
     { imageUrl: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fG5hdHVyZXxlbnwwfHx8fDE2NzU4MzM3NTM&ixlib=rb-1.2.1&q=80&w=400', description: 'Beautiful Lake' },
@@ -47,10 +47,10 @@ export class PinListComponent {
   ];
 
 
-  get filteredPins() {
-    return this.pins.filter(pin =>
-      pin.description.toLowerCase().includes(this.searchTerm.toLowerCase())
-    );
-  }
+  // get filteredPins() {
+  //   return this.pins.filter(pin =>
+  //     pin.description.toLowerCase().includes(this.searchTerm.toLowerCase())
+  //   );
+  // }
 }
 
