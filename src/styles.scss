@@ -31,6 +31,25 @@ body {
   }
 }
 
+.btn-danger {
+  background-color: #e60023; /* Pinterest red color */
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #d5001a; /* Darker red on hover */
+}
+
+.btn-outline-dark {
+  border-color: #6c757d; /* Light gray for outline buttons */
+  color: #6c757d;
+}
+
+.btn-outline-dark:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
 @media (max-width: 768px) {
   .navbar .d-flex {
     flex-direction: column; /* Stack buttons on smaller screens */
